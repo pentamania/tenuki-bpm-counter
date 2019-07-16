@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="pentamania" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>TENUKI-BPM-COUNTER</title>
+    <meta name="description" content="手抜きBPMカウンター" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="circle" id="beater"></div>
+      <h1 class="t-body title">簡易BPMカウンター</h1>
+
+      <div class="desc t-body">
+        <h3 class="t-body">使い方</h3>
+        <ol>
+          <li>何らかの方法で音楽を流します</li>
+          <li>shiftキーを押しながら、リズムに乗ってスペースキーをタップ！（OR 下の緑エリアをマウスクリック）</li>
+          <li>数値が安定するまで続ける</li>
+          <li>Shiftキーを離すorリセットボタンで履歴リセット</li>
+        </ol>
+      </div>
+
+      <div class="t-body">（全角入力状態では反応しないので注意）</div>
+
+      <div id="bpm-output" class="t-green-monitor">ここをクリック</div>
+
+      <button type="button" id="reset-btn">リセット</button>
+      <div class="t-invert">
+        <h3>差分ログ</h3>
+        <ul id="count-log-list" class="t-body"></ul>
+      </div>
+      </div>
+
+    <script type="module" src="./main.js" defer></script>
+  </body>
+</html>
