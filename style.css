@@ -75,3 +75,8 @@ body {
 #reset-btn {
   margin-top: .5rem;
 }
+#count-log-list {
+  min-height: 180px;
+  max-height: 180px;
+  overflow-y: scroll;
+}
